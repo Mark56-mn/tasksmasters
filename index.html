@@ -3,84 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TasksMaster – Get Any Task Done Fast</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <title>TasksMaster – Professional Task Management Platform</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Quick embedded CSS for MVP */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background-color: #0056ff; /* Phoenix blue */
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    header nav a {
-      color: white;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 5rem 2rem;
-      background: #e0ebff;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .hero a {
-      background-color: #0056ff;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f0f0f0;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
 </head>
 <body>
 
-<header>
-  <h1>TasksMaster</h1>
-  <nav>
-    <a href="login.html">Login</a>
-    <a href="signup.html">Sign Up</a>
-  </nav>
+<header class="main-header">
+  <div class="container">
+    <div class="logo">
+      <h1>🎯 TasksMaster</h1>
+      <span class="tagline">Professional Task Solutions</span>
+    </div>
+    <nav class="main-nav">
+      <a href="#features">Features</a>
+      <a href="#security">Security</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a href="#login" class="btn-login">Login</a>
+      <a href="#signup" class="btn-signup">Sign Up</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
-  <h2>Get Any Task Done Fast</h2>
-  <p>From coding, cleaning, deliveries to unique custom tasks – TasksMaster connects you with skilled workers in minutes.</p>
-  <a href="signup.html">Create Your Account</a>
+  <div class="container">
+    <h2 class="hero-title">Get Any Task Done Fast & Secure</h2>
+    <p class="hero-subtitle">From coding, cleaning, deliveries to custom tasks – TasksMaster connects you with verified skilled workers in minutes.</p>
+    <p class="hero-security">🔒 Bank-grade encryption • Verified professionals • 24/7 support</p>
+    <div class="hero-buttons">
+      <a href="#signup" class="btn-primary">Get Started Free</a>
+      <a href="#demo" class="btn-secondary">Watch Demo</a>
+    </div>
+  </div>
 </section>
 
-<footer>
-  &copy; 2026 TasksMaster. All rights reserved.
+<section id="features" class="features">
+  <div class="container">
+    <h2 class="section-title">Why Choose TasksMaster?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Get matched with skilled workers in under 60 seconds</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔐</div>
+        <h3>Military-Grade Security</h3>
+        <p>AES-256 encryption protects all your data and payments</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✓</div>
+        <h3>Verified Professionals</h3>
+        <p>All workers are background-checked and verified</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💳</div>
+        <h3>Secure Payments</h3>
+        <p>PCI-DSS compliant payment processing with escrow protection</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Mobile Ready</h3>
+        <p>Manage tasks on any device, anywhere, anytime</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>Global Reach</h3>
+        <p>Access skilled workers from around the world</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="security" class="security">
+  <div class="container">
+    <h2 class="section-title">Enterprise-Level Security</h2>
+    <div class="security-grid">
+      <div class="security-item">
+        <h3>🔒 End-to-End Encryption</h3>
+        <p>All communications encrypted with AES-256 and RSA-2048</p>
+      </div>
+      <div class="security-item">
+        <h3>🛡️ XSS & CSRF Protection</h3>
+        <p>Advanced protection against common web vulnerabilities</p>
+      </div>
+      <div class="security-item">
+        <h3>🔑 OAuth 2.0 Authentication</h3>
+        <p>Secure login with industry-standard protocols</p>
+      </div>
+      <div class="security-item">
+        <h3>📊 Real-Time Monitoring</h3>
+        <p>24/7 threat detection and incident response</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <div class="container">
+    <h2 class="section-title">Simple, Transparent Pricing</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Starter</h3>
+        <div class="price">$0<span>/month</span></div>
+        <ul>
+          <li>✓ 5 tasks per month</li>
+          <li>✓ Basic support</li>
+          <li>✓ Secure messaging</li>
+          <li>✓ Payment protection</li>
+        </ul>
+        <a href="#signup" class="btn-pricing">Get Started</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="badge">Most Popular</div>
+        <h3>Professional</h3>
+        <div class="price">$29<span>/month</span></div>
+        <ul>
+          <li>✓ Unlimited tasks</li>
+          <li>✓ Priority support</li>
+          <li>✓ Advanced analytics</li>
+          <li>✓ Team collaboration</li>
+        </ul>
+        <a href="#signup" class="btn-pricing">Start Free Trial</a>
+      </div>
+      <div class="pricing-card">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>✓ Everything in Pro</li>
+          <li>✓ Dedicated account manager</li>
+          <li>✓ Custom integrations</li>
+          <li>✓ SLA guarantee</li>
+        </ul>
+        <a href="#contact" class="btn-pricing">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TasksMaster</h4>
+        <p>Professional task management platform with enterprise-level security.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#help">Help Center</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TasksMaster. All rights reserved. | Secured with AES-256 Encryption</p>
+    </div>
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
